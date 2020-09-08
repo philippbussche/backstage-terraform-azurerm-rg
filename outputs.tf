@@ -3,7 +3,11 @@ output "id" {
 }
 
 output "name" {
-  value = var.name
+  value = split("/", azurerm_resource_group.rg.id)[4]
+}
+
+output "subscription_id" {
+  value = split("/", azurerm_resource_group.rg.id)[1]
 }
 
 output "location" {

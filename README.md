@@ -36,6 +36,7 @@ module "rglb" {
 | id | n/a |
 | location | n/a |
 | name | n/a |
+| subscription\_id | n/a |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
