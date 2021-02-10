@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "rg" {
   location = var.location
-  name     = var.name
+  name     = lower(var.name)
   tags     = var.tags
 }
