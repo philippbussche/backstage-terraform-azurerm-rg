@@ -1,14 +1,18 @@
-# Azure LB
+# Azure Resource Group
 
 ## Usage
 Module compatible with Terraform `0.12`
 ```hcl
 
-module "rglb" {
-  source = "git::git@git.signintra.com:dct/azure/terraform-azurerm-rg.git?ref=x.x.x"
+module "rg" {
+  source = "git::git@git.signintra.com:bdp/azure/terraform-azurerm-rg.git?ref=x.x.x"
 
-  name         = "rg-name"
-  location     = "West US"
+  location_code = module.map.region_map[var.location]
+  location      = var.location
+  topic         = var.topic
+  stage         = var.stage
+  application   = var.application
+  tags          = local.tags
 }
 
 ```
