@@ -15,29 +15,45 @@ module "rglb" {
 
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+No requirements.
+
 ## Providers
 
 | Name | Version |
 |------|---------|
-| azurerm | n/a |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | n/a |
+
+## Modules
+
+No modules.
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [azurerm_resource_group.rg](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:-----:|
-| location | Resource Group Location | `string` | `"westeurope"` | no |
-| name | Resource Group Name | `string` | n/a | yes |
-| tags | Environment tag for the resource group (i.e. 'Production') | `map(string)` | `{}` | no |
+|------|-------------|------|---------|:--------:|
+| <a name="input_application"></a> [application](#input\_application) | n/a | `string` | n/a | yes |
+| <a name="input_location"></a> [location](#input\_location) | Resource Group Location | `string` | `"westeurope"` | no |
+| <a name="input_location_code"></a> [location\_code](#input\_location\_code) | n/a | `string` | n/a | yes |
+| <a name="input_stage"></a> [stage](#input\_stage) | n/a | `string` | n/a | yes |
+| <a name="input_tags"></a> [tags](#input\_tags) | Environment tag for the resource group (i.e. 'Production') | `map(string)` | `{}` | no |
+| <a name="input_topic"></a> [topic](#input\_topic) | n/a | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| id | n/a |
-| location | n/a |
-| name | n/a |
-| subscription\_id | n/a |
-
+| <a name="output_id"></a> [id](#output\_id) | n/a |
+| <a name="output_location"></a> [location](#output\_location) | n/a |
+| <a name="output_name"></a> [name](#output\_name) | n/a |
+| <a name="output_subscription_id"></a> [subscription\_id](#output\_subscription\_id) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 
