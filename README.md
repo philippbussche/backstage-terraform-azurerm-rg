@@ -29,25 +29,32 @@ module "rg" {
 
 | Name | Version |
 |------|---------|
+| <a name="provider_azuread"></a> [azuread](#provider\_azuread) | n/a |
 | <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | n/a |
 
 ## Modules
 
-No modules.
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_permissions"></a> [permissions](#module\_permissions) | git::git@git.signintra.com:bdp/azure/terraform-azurerm-permissions | v1.1.0 |
 
 ## Resources
 
 | Name | Type |
 |------|------|
 | [azurerm_resource_group.rg](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group) | resource |
+| [azurerm_role_assignment.uc_permission](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/role_assignment) | resource |
+| [azuread_groups.uc_groups](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/data-sources/groups) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_application"></a> [application](#input\_application) | n/a | `string` | n/a | yes |
+| <a name="input_enable_uc_permissions"></a> [enable\_uc\_permissions](#input\_enable\_uc\_permissions) | n/a | `bool` | `false` | no |
 | <a name="input_location"></a> [location](#input\_location) | Resource Group Location | `string` | `"westeurope"` | no |
 | <a name="input_location_code"></a> [location\_code](#input\_location\_code) | n/a | `string` | n/a | yes |
+| <a name="input_resource_type"></a> [resource\_type](#input\_resource\_type) | n/a | `string` | `"rg"` | no |
 | <a name="input_stage"></a> [stage](#input\_stage) | n/a | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | Environment tag for the resource group (i.e. 'Production') | `map(string)` | `{}` | no |
 | <a name="input_topic"></a> [topic](#input\_topic) | n/a | `string` | n/a | yes |

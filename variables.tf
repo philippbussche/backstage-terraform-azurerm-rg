@@ -25,3 +25,13 @@ variable "application" {
 variable "location_code" {
   type = string
 }
+
+variable "resource_type" {
+  type    = string
+  default = "rg"
+}
+
+variable "enable_uc_permissions" {
+  type    = bool
+  default = false
+}
