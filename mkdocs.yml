@@ -1,0 +1,10 @@
+site_name: "Terraform Azure Resource Group Module"
+site_description: "Terraform module for creating Azure Resource Groups"
+
+nav:
+  - README.md: README.md
+
+plugins:
+  - techdocs-core
+
+docs_dir: ./

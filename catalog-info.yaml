@@ -5,6 +5,7 @@ metadata:
   description: "Terraform module for creating Azure Resource Groups"
   annotations:
     github.com/project-slug: philippbussche/backstage-terraform-azurerm-rg
+    backstage.io/techdocs-ref: dir:.
 spec:
   type: library
   lifecycle: production
