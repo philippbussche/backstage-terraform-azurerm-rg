@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "terraform-azurerm-rg-module"
+  description: "Terraform module for creating Azure Resource Groups"
+  annotations:
+    github.com/project-slug: philippbussche/backstage-terraform-azurerm-rg
+spec:
+  type: library
+  lifecycle: production
+  owner: "philipp"
