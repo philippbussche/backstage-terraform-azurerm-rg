@@ -1,6 +1,6 @@
 module "permissions" {
   # source = "../terraform-azurerm-permissions"
-  source = "git::git@git.signintra.com:bdp/azure/terraform-azurerm-permissions?ref=v1.1.0"
+  source = "git::git@git.com:xxx/xxx/terraform-azurerm-permissions?ref=v1.1.0"
 }
 
 resource "azurerm_resource_group" "rg" {

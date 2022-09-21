@@ -5,7 +5,7 @@ Module compatible with Terraform `0.12`
 ```hcl
 
 module "rg" {
-  source = "git::git@git.signintra.com:bdp/azure/terraform-azurerm-rg.git?ref=x.x.x"
+  source = "git::git@git.com:xxx/azure/terraform-azurerm-rg.git?ref=x.x.x"
 
   location_code = module.map.region_map[var.location]
   location      = var.location
@@ -36,7 +36,7 @@ module "rg" {
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_permissions"></a> [permissions](#module\_permissions) | git::git@git.signintra.com:bdp/azure/terraform-azurerm-permissions | v1.1.0 |
+| <a name="module_permissions"></a> [permissions](#module\_permissions) | git::git@git.com:xxx/xxx/terraform-azurerm-permissions | v1.1.0 |
 
 ## Resources
 
